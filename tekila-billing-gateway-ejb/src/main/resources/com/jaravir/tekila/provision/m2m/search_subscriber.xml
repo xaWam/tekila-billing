@@ -1,0 +1,7 @@
+            <spml:searchRequest xmlns:spml="urn:siemens:names:prov:gw:SPML:2:0" language="en_us">
+                <version xmlns:nsr="urn:siemens:names:prov:gw:HLR_NSR:2:1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">SUBSCRIBER_v10</version>
+                <base>
+                    <objectclass>Subscriber</objectclass>
+                    <alias name="%{ALIAS_NAME}%" value="%{MOB_NUM}%"/>
+                </base>
+            </spml:searchRequest>

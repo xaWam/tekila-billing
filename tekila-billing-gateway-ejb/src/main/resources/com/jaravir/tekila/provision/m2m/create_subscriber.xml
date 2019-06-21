@@ -1,0 +1,40 @@
+            <spml:addRequest xmlns:spml="urn:siemens:names:prov:gw:SPML:2:0" language="en_us">
+                <version xmlns:subscriber="urn:siemens:names:prov:gw:SUBSCRIBER:1:0">SUBSCRIBER_v10</version>
+                <object xmlns:subscriber="urn:siemens:names:prov:gw:SUBSCRIBER:1:0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="subscriber:Subscriber">
+                    <identifier>%{IMSI}%</identifier>
+                    <auc><imsi>%{IMSI}%</imsi>
+                        <encKey>%{KI}%</encKey>
+                        <algoId>0</algoId>
+                        <kdbId>%{KDBID}%</kdbId>
+                        <acsub>$%{SIMTYPE}%</acsub>
+                    </auc>
+                    <hlr>
+                        <ntype>%{SIMCARDTYPE}%</ntype>
+                        <mobileSubscriberType>genericSubscriber</mobileSubscriberType>
+                        <umtsSubscriber>
+                            <accTypeGSM>true</accTypeGSM>
+                            <accTypeGERAN>true</accTypeGERAN>
+                            <accTypeUTRAN>true</accTypeUTRAN>
+                        </umtsSubscriber>
+                        <mscat>10</mscat>
+                        <clip>true</clip>
+                        <hold>true</hold>
+                        <rr>NAT</rr>
+                        <sr>1</sr>
+                        <cfu/>
+                        <cfb/>
+                        <cfnrc/>
+                        <cfnry/>
+                        <caw/>
+                        <comcb>
+                            <control>bySubscriber</control>
+                            <password>%{PASSWORD}%</password>
+                        </comcb><baoc/>
+                        <boic/>
+                        <boicexhc/>
+                        <baic/>
+                        <bicroam/>
+                        <optimalRouting>false</optimalRouting>
+                        <ndcLac>%{NDC}%</ndcLac>
+                    </hlr></object>
+            </spml:addRequest>
